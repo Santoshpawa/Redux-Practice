@@ -1,0 +1,90 @@
+Here's the full text extracted from the image:
+
+---
+
+## **Project: L2 - Project Tracker App**
+
+### **Description:**
+
+Create a Project Tracker web application where users can manage multiple projects, each containing its own set of tasks. The app should support adding, updating, and deleting projects and tasks, with real-time updates and organized UI using **Firebase Realtime Database**.
+
+---
+
+### **Requirements:**
+
+#### **1. Create & Persist Auth**
+
+* Use **Context API** to manage login state globally.
+* Show different views for logged-in and non-logged-in users.
+
+---
+
+#### **2. Routing with React Router**
+
+* Pages required:
+
+  * **Dashboard**: Show list of projects
+  * **Project Detail**: Show tasks for selected project
+  * Add Project page
+  * Edit Project (optional)
+  * Login / Register pages
+  * Page Not Found route
+* Use `react-router-dom` to manage routing. Please Reuse.
+
+---
+
+#### **3. Realtime Database Integration**
+
+* Sync all project and their tasks in Firebase.
+* Form updates should reflect in real-time without refresh when changes are made.
+
+---
+
+#### **4. Project & Task Manager**
+
+* Project data:
+
+  * `title`, `description`, `createdAt`
+* Task data:
+
+  * `title`, `status` (todo, inprogress, completed)
+  * `priority` (low, medium, high)
+  * `createdAt`, `dueDate`
+* Allow:
+
+  * Add/edit/delete projects
+  * Add/edit/delete tasks under a project
+
+---
+
+#### **5. Task Filters & Controls**
+
+* **Filtering by status** or **priority**
+* **Sorting** by created date or priority
+* Show tasks based on filters and match them per project
+* Use dropdowns or checkboxes for filters
+
+---
+
+#### **6. Action Bar / Reusable Calls**
+
+* Use Action bar for Add/Edit Task
+* Use modals (Optional but Recommended)
+
+---
+
+#### **7. Toasts (Optional but Recommended)**
+
+* Use Toasts for action calls (e.g., task created, deleted)
+
+---
+
+### **Bonus Feature (Optional):**
+
+* Show task progress (e.g., 3 of 5 tasks completed per project).
+* Allow due-date-based task highlights (overdue state).
+* Allow drag-and-drop to reorder tasks using a library (e.g., [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd)).
+
+---
+
+Let me know if you'd like a project folder structure or code templates to get started!
